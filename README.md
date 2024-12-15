@@ -27,9 +27,13 @@ This is a simple FastAPI application deployed using Docker. Follow the instructi
 
 ## Access the Application
 
-- Once the container is running, the FastAPI application will be accessible at: 
+- Once the container is running, the FastAPI application youc can test it at: 
   ```
   http://localhost:8000
+
+- And scan your files at: 
+  ```
+  http://localhost:8000/scan_file
 
 ## Notes
 
