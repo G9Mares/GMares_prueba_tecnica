@@ -1,0 +1,10 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+virtualenv
+.env
+activate.bat
+.gitignore
+README.md
+Postman_collection.json
