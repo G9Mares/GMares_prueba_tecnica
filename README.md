@@ -11,7 +11,7 @@ This is a simple FastAPI application deployed using Docker. Follow the instructi
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:G9Mares/GMares_prueba_tecnica.git
    cd GMares_prueba_tecnica
    ```
 
