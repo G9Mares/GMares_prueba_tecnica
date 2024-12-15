@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "f0966a4c-8b60-480d-b2b3-40a3f651d10b",
 		"name": "PruebaPHINDER",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "25517067"
 	},
 	"item": [
@@ -18,12 +18,8 @@
 					"mode": "formdata",
 					"formdata": []
 				},
-				"url": {
-					"raw": "{{host}}",
-					"host": [
-						"{{host}}"
-					]
-				}
+				"url": "{{host}}",
+				"description": "This endpoint makes an HTTP GET request to {{host}} for test the service\n\n``` json\n{\n  \"message\": \"runing ok ...\"\n}\n\n ```"
 			},
 			"response": []
 		},
@@ -43,19 +39,12 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": ""
+							"src": []
 						}
 					]
 				},
-				"url": {
-					"raw": "{{host}}/scan_file",
-					"host": [
-						"{{host}}"
-					],
-					"path": [
-						"scan_file"
-					]
-				}
+				"url": "{{host}}/scan_file",
+				"description": "### Scan File\n\nThis endpoint allows you to scan a file using the provided API key.\n\n#### Request Body\n\n- `apikey` (text): The API key required for authentication.\n    \n- `file` (file): The file to be scanned.\n    \n\n#### Response\n\nThe response will be in JSON format with the following schema:\n\n``` json\n{\n  \"id\": \"\",\n  \"type\": \"\",\n  \"links\": {\n    \"self\": \"\",\n    \"item\": \"\"\n  },\n  \"attributes\": {\n    \"results\": {},\n    \"stats\": {\n      \"malicious\": 0,\n      \"suspicious\": 0,\n      \"undetected\": 0,\n      \"harmless\": 0,\n      \"timeout\": 0,\n      \"confirmed-timeout\": 0,\n      \"failure\": 0,\n      \"type-unsupported\": 0\n    },\n    \"date\": 0,\n    \"status\": \"\"\n  }\n}\n\n ```"
 			},
 			"response": []
 		}
@@ -85,7 +74,7 @@
 	"variable": [
 		{
 			"key": "host",
-			"value": "http://localhost:4000",
+			"value": "http://localhost:8000",
 			"type": "string"
 		},
 		{
